@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/viewpagerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dip">
+
+        <com.androideve.imageslideshow.AutoScrollViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/circlePageIndicator"
+            android:layout_alignParentTop="true"
+            android:background="#fff" />
+
+        <com.androideve.imageslideshow.CirclePageIndicator
+            android:id="@+id/circlePageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:minHeight="20dp"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
